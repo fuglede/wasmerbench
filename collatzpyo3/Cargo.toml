@@ -1,0 +1,16 @@
+[package]
+name = "collatzpyo3"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "collatzpyo3"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.14.1"
+features = ["extension-module"]
+
+[profile.release]
+opt-level = 3
+
